@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V15</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="../../style/css-login/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../style/css-login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../../style/css-login/css/main.css">
+</head>
+
+<style>
+    .hover:hover{
+        color: rgb(228, 167, 25);
+    }
+</style>
+
+<body>
+    <div style="position: fixed;">
+        <img src="../../style/css-tela_inicial/imagem/imagem_14.jpg" style="filter:blur(5px); height: 100%; width: 100%;">
+    </div>
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100 col-4">
+                    <div class="form-title" style="background-color: rgb(3, 3, 121); padding: 5%; display: flex; justify-content: center;">
+                        <span class="login100-form-title-1">
+                            Cadastro
+                        </span>
+                    </div>
+
+                    <form class="form-group wrap-login100" style="margin-top: 10%;" method="POST" action="../../sql/usuario/cadastro_emp.php">
+                        <span class="label"><p style="font-size: 16px; color: rgb(228, 167, 25);">Nome da Empresa</p></span>
+                        <div class="validate-input m-b-20 col-7" data-validate="Username is required">
+                            <input class="input100" type="text" name="nome" placeholder="" style="border: 1px dotted rgb(228, 167, 25);" required>
+                        </div>
+    
+                        <span class="label"><p style="font-size: 16px; color: rgb(228, 167, 25)">Senha</p></span>
+                        <div class="validate-input m-b-30 col-7" data-validate="Username is required">
+                            <input class="input100" type="password" name="senha" placeholder="" style="border: 1px dotted rgb(228, 167, 25);" required>
+                        </div>
+    
+                        <div style="display: flex; justify-content: center; width: 60%;">
+                            <a href="../tela_sem_usuario.html" class="login100-form-btn m-t-20 hover" style="background-color: rgb(3, 3, 121); margin: 2%;">Voltar</a>
+                            <button type="submit" class="login100-form-btn m-t-20 hover" style="background-color: rgb(3, 3, 121); margin: 2%;">Confirmar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
